@@ -9,6 +9,10 @@ api = Api(app)
 
 api.add_resource(InstagramApi, '/insta-download')
 
+@app.route('/')
+def hello():
+    return 'Hello world!S'
+
 
 if __name__ == '__main__':
     app.run(debug=True)
